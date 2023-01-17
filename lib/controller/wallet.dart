@@ -43,7 +43,7 @@ class WalletController extends ChangeNotifier {
           context,
           MaterialPageRoute(
               builder: (context) => const MyHomePage(
-                    title: 'Devfest Minna 2022',
+                    title: 'Simple Forum Dapp',
                   )));
       publicWalletAddress = walletConnectHelper
           .getEthereumCredentials()

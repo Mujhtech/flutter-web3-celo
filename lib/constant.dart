@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 enum BlockchainFlavor {
   ropsten,
   rinkeby,
@@ -5,6 +7,11 @@ enum BlockchainFlavor {
   polygonMainNet,
   mumbai,
   unknown,
+}
+
+class GlobalColors {
+  GlobalColors._();
+  static const Color primary = Color(0xFFFCFF51);
 }
 
 class GlobalConstants {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web3_basic/constant.dart';
 import 'package:flutter_web3_basic/models/forum.dart';
 import 'package:jazzicon/jazzicon.dart';
 import 'package:jazzicon/jazziconshape.dart';
@@ -32,16 +33,16 @@ class _MessageState extends State<Message> {
         Container(
           width: MediaQuery.of(context).size.width - 100,
           decoration: const BoxDecoration(
-              color: Colors.blue,
+              color: GlobalColors.primary,
               borderRadius: BorderRadius.all(Radius.circular(6))),
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '0x008c2cf1a4d998ed72917c885e6942706eb66137',
+                widget.forum.owner,
                 style: const TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 14,
                     fontWeight: FontWeight.w600),
               ),
@@ -51,7 +52,7 @@ class _MessageState extends State<Message> {
               Text(
                 widget.forum.message,
                 style: const TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 14,
                     fontWeight: FontWeight.w600),
               )

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web3_basic/components/components.dart';
+import 'package:flutter_web3_basic/constant.dart';
 import 'package:flutter_web3_basic/controller/controller.dart';
 import 'package:provider/provider.dart';
 
@@ -67,13 +68,13 @@ class SplashPage extends StatelessWidget {
               height: 40,
               width: 200,
               decoration: const BoxDecoration(
-                  color: Colors.blue,
+                  color: GlobalColors.primary,
                   borderRadius: BorderRadius.all(Radius.circular(6))),
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               child: const Center(
                 child: Text(
                   'Connect to continue',
-                  style: TextStyle(fontSize: 20.0, color: Colors.white),
+                  style: TextStyle(fontSize: 20.0, color: Colors.black),
                 ),
               ),
             ),
