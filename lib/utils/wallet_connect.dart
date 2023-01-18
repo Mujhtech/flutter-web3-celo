@@ -31,11 +31,11 @@ class WalletConnectHelper {
     final WalletConnect connector = WalletConnect(
       bridge: bridge ?? 'https://bridge.walletconnect.org',
       clientMeta: PeerMeta(
-        name: appInfo.name ?? 'Devfest Minna 2022',
-        description: appInfo.description ?? 'Devfest Minna 2022 - GDG Minna',
-        url: appInfo.url ?? 'https://walletconnect.org',
+        name: appInfo.name ?? 'Simple Forum Dapp',
+        description: appInfo.description ?? 'Simple Forum Dapp',
+        url: appInfo.url ?? 'https://celo.org',
         icons: appInfo.icons ??
-            ['https://cryptologos.cc/logos/polygon-matic-logo.png'],
+            ['https://cryptologos.cc/logos/celo-celo-logo.png?v=024'],
       ),
     );
     return connector;

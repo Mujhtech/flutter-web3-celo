@@ -96,7 +96,7 @@ class WalletController extends ChangeNotifier {
         address: EthereumAddress.fromHex(GlobalConstants.contractAddress),
         client: web3client,
       );
-      final res = await forumV1.getComments('Devfest Minna 2022');
+      final res = await forumV1.getComments('Celo Sage');
       _forums = Forum.fromMaps(res);
       notifyListeners();
     } catch (e) {
@@ -111,7 +111,7 @@ class WalletController extends ChangeNotifier {
         client: web3client,
       );
       Credentials cred = walletConnectHelper.getEthereumCredentials();
-      await forumV1.addComment('Devfest Minna 2022', message,
+      await forumV1.addComment('Celo Sage', message,
           credentials: cred,
           transaction: Transaction(
               from: walletConnectHelper

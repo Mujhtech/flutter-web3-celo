@@ -15,15 +15,17 @@ class GlobalColors {
 }
 
 class GlobalConstants {
-  static const String testnetApiUrl = "https://rpc-mumbai.maticvigil.com/";
-  static const String mainnettApiUrl = "https://polygon-rpc.com/";
+  static const String apiUrl = "https://forno.celo.org";
+  static const String mainnetApiUrl = "https://forno.celo.org";
+  static const String testnetApiUrl =
+      "https://alfajores-forno.celo-testnet.org";
   static const String bridge = "https://bridge.walletconnect.org";
-  static const String name = "Polygon";
-  static const String url = "https://polygon.technology";
-  static const String contractAddress =
-      '0xe2876235294175a2369E44939471C3104cC6ACdD';
-  static const int testnetChainId = 80001;
-  static const int mainnetChainId = 137;
+  static const String name = "Celo Composer - Flutter";
+  static const String url = "https://celo.org";
+  static const int chainId = 5;
+  static const int testnetChainId = 44787;
+  static const int mainnetChainId = 42220;
+  static const String contractAddress = '---';
 }
 
 extension BlockchainFlavorExtention on BlockchainFlavor {
